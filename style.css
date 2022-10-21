@@ -59,7 +59,7 @@ fieldset{
   height:1024px;
   left:599px;
   top:0px;
-  background-image: url(images/map.png);
+  background-image: url(map.png);
   border:none;
   filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
 }
