@@ -19,7 +19,7 @@
     input:-ms-input-placeolder{color:#a8a8a8;}
     input::-webkit-input-placeholder{color:#a8a8a8;}
     input::-moz-placeholder{color:#a8a8a8;}
-    div{
+    h1{
       height:40px;
       width:400px;
       border:1px solid #1b5ac2;
@@ -42,12 +42,67 @@
       float:right;
       color:#ffffff;
     }
+    .line{
+      display: flex;
+      flex-basis: 100%;
+      align-items: center;
+      color:rgba(0, 0, 0, 0.25);
+      font-size:16px;
+      margin:16px 0px;
+    }
+    .line::before,
+    .line::after{
+      content:"";
+      flex-grow:1;
+      margin:40px 10px;
+      background:rgba(0, 0, 0, 0.25);
+      height:1px;
+      font-size:0px;
+      line-height:0px;
+    }
+    fieldset{
+      box-sizing: border-box;
+      position:absolute;
+      width:711px;
+      height:1024px;
+      left:586px;
+      top:-2px;
+      border:1px solid #000000;
+      filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+    }
   </style>
 </head>
 <body>
   <div>
-    <input type="text" placeholder="검색어 입력">
-    <button>검색</button>
+    <h1>
+      <input type="text" placeholder="검색어 입력">
+      <button>검색</button>
+    </h1>
+    <h2 class="line">축제 일정</h2>
+    <img src="images/무중력영화제.png" width="400" alt="무중력 영화제 그림">
+    <p></p>
+    <a href='https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=10847&pRo=6' style="text-decoration:none"
+     target='_blank'>
+     무중력 영화제
+    </a>
+    <p><strong>서울특별시 청년 공간 무중력 지대 양천은 2018년부터 매년 무중력 영화제(MUFF)를 개최하고 있다.</strong></p>
+    <p>기간 : 9.16 (금) ~ 9.17(토)</p>  
+
+    <p></p>
+
+
+    <img src="images/청년의날.png" width="400" alt="청년의날 그림">
+    <p>
+    </p>
+    <a href='http://www.2030fair.com/' style="text-decoration:none"
+     target='_blank'>
+     청년의 날
+    </a>
+    <p><strong>제3회 2022년 청년의 날 기념식이 9월 17일(토) 10시 서울 광화문광장에서 한덕수 국무총리 주재로 개최되었다.</strong></p>
+    <p>기간 : 9.17 (금)</p>
+
+
+    <a href="#top">처음으로</a>
   </div>
 </body>
 </html>
