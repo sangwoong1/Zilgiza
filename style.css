@@ -57,9 +57,9 @@ fieldset{
   position:absolute;
   width:711px;
   height:1024px;
-  left:599px;
+  left:595px;
   top:0px;
-  background-image: url(ma.png);
+  background-image: url(map.png);
   border:none;
   filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
 }
@@ -88,4 +88,11 @@ fieldset{
 #topMenu .menuLink:hover{
   color:#1b5acd;
   background-color: #ffffff;
+}
+.no-scroll {
+  -ms-overflow-style: none; /* IE, Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.no-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
