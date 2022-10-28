@@ -4,11 +4,63 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Zlgiza</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <img src="logo.jpg" width="90">
+  <ul class="menu" style="float:left;">
+    <img src="logo.jpg" width="90">
+    <li>
+      <a href="#">MENU1</a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">MENU2</a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">MENU3</a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">MENU4</a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">MENU5</a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+  </ul>
   <div style="display:inline-block">
     <h1>
       <input type="text" placeholder="검색어 입력">
@@ -51,17 +103,16 @@
         <li><a class="menuLink" href="#그외">...</a></li>
       </ul>
     </nav>
-    <dl id="map" style="width:500px;height:400px;"></dl>
+    <dl id="map" style="width:1000px;height:1000px;"></dl>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9932d61390c585cb1e9e272778181329"></script>
     <script>
       var container = document.getElementById('map');
-      var options = {
-        center: new kakao.maps.LatLng(33.450701, 126.570667),
-        level: 3
-      };
-  
+      var options = {center: new kakao.maps.LatLng(33.450701, 126.570667),level: 3};
       var map = new kakao.maps.Map(container, options);
     </script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=LIBRARY"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=services"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=services,clusterer,drawing"></script>
   </fieldset>
 </body>
 </html>
