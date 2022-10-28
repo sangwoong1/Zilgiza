@@ -33,7 +33,7 @@
   .menu > li:hover .submenu {
     height: 250px; /*서브메뉴 li한개의 높이 50*5*/
     transition-duration: 1s;}
-  div{
+  dl{
     float:left;
     margin-top: 20px;
     margin-left:20px;
@@ -90,7 +90,7 @@
     font-size:0px;
     line-height:0px;
   }
-  fieldset{
+  div{
     box-sizing: border-box;
     position:absolute;
     width:711px;
@@ -202,7 +202,7 @@
       </ul>
     </li>
   </ul>
-  <div style="display:inline-block">
+  <dl style="display:inline-block">
     <h1>
       <input type="text" placeholder="검색어 입력">
       <button>검색</button>
@@ -233,19 +233,9 @@
       <p>기간 : 10. 22(토)</p><br>
     </dt>
     <a href="#" onclick="javascript:window.scrollTo(0,0)">TOP</a>
-  </div>
-  <fieldset>
-    <nav id="topMenu">
-      <ul>
-        <li><a class="menuLink" href="#맛집">맛집</a></li>
-        <li><a class="menuLink" href="#카페">카페</a></li>
-        <li><a class="menuLink" href="#푸드트럭">푸드트럭</a></li>
-        <li><a class="menuLink" href="#축제">축제</a></li>
-        <li><a class="menuLink" href="#그외">...</a></li>
-      </ul>
-    </nav>
+  </dl>
     <div class="map_wrap">
-      <div id="map" style="width:1000px;height:1000px;position:relative;overflow:hidden;"></div> 
+      <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div> 
       <!-- 지도타입 컨트롤 div 입니다 -->
       <div class="custom_typecontrol radius_border">
           <span id="btnRoadmap" class="selected_btn" onclick="setMapType('roadmap')">지도</span>
@@ -327,6 +317,5 @@
       
   });
   </script>
-  </fieldset>
 </body>
 </html>
