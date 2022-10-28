@@ -133,7 +133,7 @@
   .no-scroll::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
   }
-  html, filedset{width:100%;height:100%;margin:0;padding:0;} 
+  html, body{width:100%;height:100%;margin:0;padding:0;} 
   .map_wrap {position:relative;overflow:hidden;width:100%;height:350px;}
   .radius_border{border:1px solid #919191;border-radius:5px;}     
   .custom_typecontrol {position:absolute;top:10px;right:10px;overflow:hidden;width:130px;height:30px;margin:0;padding:0;z-index:1;font-size:12px;font-family:'Malgun Gothic', '맑은 고딕', sans-serif;}
@@ -244,13 +244,6 @@
         <li><a class="menuLink" href="#그외">...</a></li>
       </ul>
     </nav>
-    <dl id="map" style="width:1000px;height:1000px;"></dl>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=840029f076ed419d150b9eae97a4d6d2"></script>
-    <script>
-      var container = document.getElementById('map');
-      var options = {center: new kakao.maps.LatLng(33.450701, 126.570667),level: 3};
-      var map = new kakao.maps.Map(container, options);
-    </script>
     <div class="map_wrap">
       <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div> 
       <!-- 지도타입 컨트롤 div 입니다 -->
@@ -265,7 +258,7 @@
       </div>
   </div>
   
-  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=발급받은 APP KEY를 사용하세요"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=840029f076ed419d150b9eae97a4d6d2"></script>
   <script>
   var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
       mapOption = { 
