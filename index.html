@@ -283,10 +283,7 @@
       map.setLevel(map.getLevel() + 1);
   }
   </script>
-  <p>
-    <button onclick="hideMarkers()">마커 감추기</button>
-    <button onclick="showMarkers()">마커 보이기</button>
-  </p> 
+  
   <script>
 // 지도를 클릭했을때 클릭한 위치에 마커를 추가하도록 지도에 클릭이벤트를 등록합니다
 kakao.maps.event.addListener(map, 'click', function(mouseEvent) {        
@@ -331,6 +328,10 @@ function showMarkers() {
 function hideMarkers() {
     setMarkers(null);    
 }
+    <p>
+    <button onclick="hideMarkers()">마커 감추기</button>
+    <button onclick="showMarkers()">마커 보이기</button>
+  </p> 
   </script>
   </fieldset>
 </body>
