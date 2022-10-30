@@ -31,7 +31,7 @@
     box-sizing: border-box;
     position:absolute;
     width : 586px;
-    height : 1024px;
+    height : 950px;
     left:calc(50%-586px/2-427px);
     top:calc(50%-1024px/2);
     border-right: 1px solid #BBB9B9;
@@ -85,7 +85,7 @@
     box-sizing: border-box;
     position:absolute;
     width:1190px;
-    height:1024px;
+    height:900px;
     left:705px;
     top:20px;
     border:none;
