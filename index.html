@@ -9,7 +9,7 @@
   <ul class="menu" style="display:inline-block">
     <img src="logo.jpg" width="90">
     <li>
-      <a href="#"><center><img src="user.png" width="40" style="vertical-align: middle;"></center></a>
+      <a href="#"><center><img src="user.png" width="35" style="vertical-align: middle;"></center></a>
       <ul class="submenu">
         <li><a href="#">submenu01</a></li>
         <li><a href="#">submenu02</a></li>
@@ -19,7 +19,7 @@
       </ul>
     </li>
     <li>
-      <a href="#"><center><img src="map-marker.png" width="40" style="vertical-align: middle;"></center></a>
+      <a href="#"><center><img src="map-marker.png" width="35" style="vertical-align: middle;"></center></a>
       <ul class="submenu">
         <li><a href="#">submenu01</a></li>
         <li><a href="#">submenu02</a></li>
@@ -29,7 +29,7 @@
       </ul>
     </li>
     <li>
-      <a href="#"><center><img src="bookmark.png" width="40" style="vertical-align: middle;"></center></a>
+      <a href="#"><center><img src="bookmark.png" width="35" style="vertical-align: middle;"></center></a>
       <ul class="submenu">
         <li><a href="#">submenu01</a></li>
         <li><a href="#">submenu02</a></li>
@@ -39,7 +39,7 @@
       </ul>
     </li>
     <li>
-      <a href="#"><center><img src="heart.png" width="40" style="vertical-align: middle;"></center></a>
+      <a href="#"><center><img src="heart.png" width="35" style="vertical-align: middle;"></center></a>
       <ul class="submenu">
         <li><a href="#">submenu01</a></li>
         <li><a href="#">submenu02</a></li>
@@ -49,7 +49,7 @@
       </ul>
     </li>
     <li>
-      <a href="#"><center><img src="exit.png" width="40" style="vertical-align: middle;"></center></a>
+      <a href="#"><center><img src="exit.png" width="35" style="vertical-align: middle;"></center></a>
       <ul class="submenu">
         <li><a href="#">submenu01</a></li>
         <li><a href="#">submenu02</a></li>
@@ -120,7 +120,15 @@
       };  
   
   var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
-      
+  function resizeMap() {
+    var mapContainer = document.getElementById('map');
+    mapContainer.style.width = '1000px';
+    mapContainer.style.height = '1000px'; 
+} 
+  function relayout() {    
+
+    map.relayout();
+} 
   // 지도타입 컨트롤의 지도 또는 스카이뷰 버튼을 클릭하면 호출되어 지도타입을 바꾸는 함수입니다
   function setMapType(maptype) { 
       var roadmapControl = document.getElementById('btnRoadmap');
